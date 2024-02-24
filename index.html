@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Majestic Nepal</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Swiper link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="CSS/media.css" />
+    <!--  google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav-section -->
+    <nav id="nav" class=" ">
+      <div class="nav-container">
+        <h2 class="nav-logo">Travel Nepal</h2>
+        <div class="link-container">
+          <p class="border"><a href="" id="places">Places to go</a></p>
+          <p class="border"><a href="" id="todo">Things to do</a></p>
+          <p class="border"><a href="" id="tips">Experiences</a></p>
+        </div>
+        <div id="menu-open" class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="nav-ops">
+          <div class="ops-container">
+            <div class="links">
+              <p id = "mode" class=" ">DARK</p>
+              <i class="fa-solid fa-lightbulb toggler"></i>
+            </div>
+            <div class="links">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="drop1" class="dropdown">
+        <div class="dropdown-left">
+          <ul>
+            <li class="droplist">
+              <a href="#"
+                >City of Lakes - Pokhara
+                <i class="blue fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Annapurna Base Camp <i class="blue fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >City of Temples - The Kathmandu
+                <i class="blue fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >The peak of World - Mt. Everest
+                <i class="blue fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Biker's Trail - Lomanthang
+                <i class="blue fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Rhino's Territory - Sauraha
+                <i class="blue fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown-right">
+          <img src="assets/drop.jpeg" alt="" class="image" />
+          <p>Featured: Top five things to do while in Chitwan</p>
+          <a href="#">Explore </a>
+        </div>
+      </div>
+
+      <div id="drop2" class="dropdown">
+        <div class="dropdown-left">
+          <ul>
+            <li class="droplist">
+              <a href="#"
+                >Paraglide over Paradise @Pokhara
+                <i class="blue fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Compete at Annapurna Circuit
+                <i class="blue fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Dance With Gods - Kathmandu
+                <i class="blue fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Meet the living Goddess<i
+                  class="blue fa-solid fa-arrow-right"
+                ></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Test your limits, Bungee at Kusma<i
+                  class="blue fa-solid fa-arrow-right"
+                ></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Harvest Mad Honey- Solukhumbu<i
+                  class="blue fa-solid fa-arrow-right"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown-right">
+          <img src="assets/" alt="" class="image" />
+          <p>Featured: Top five things to do while in Kathmandu</p>
+          <a href="#">Explore </a>
+        </div>
+      </div>
+
+      <div id="drop3" class="dropdown">
+        <div class="dropdown-left">
+          <ul>
+            <li class="droplist">
+              <a href="#"
+                >Experience the Majestic Himalayan Trails<i
+                  class="blue fa-solid fa-arrow-right"
+                ></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Sample Newari cuisine in Kathmandu<i
+                  class="blue fa-solid fa-arrow-right"
+                ></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Spot one-horned rhinos in Chitwan<i
+                  class="blue fa-solid fa-arrow-right"
+                ></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Watch the sun rise in Nagarkot<i
+                  class="blue fa-solid fa-arrow-right"
+                ></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Stop off for tea in Ilam<i
+                  class="blue fa-solid fa-arrow-right"
+                ></i
+              ></a>
+            </li>
+            <li class="droplist">
+              <a href="#"
+                >Go bird watching in koshi tappu<i
+                  class="blue fa-solid fa-arrow-right"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown-right">
+          <img src="assets/drop.jpeg" alt="" class="image" />
+          <p>Featured: Top five things to do while in Kathmandu</p>
+          <a href="#">Explore </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile Navigatoin -->
+    <div id="menu" class="menu">
+      <div id="menu-close" class="ham-close">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+      <div class="menu-container">
+        <h2><a href="#" class="menu-links">Places To Go</a></h2>
+        <h2><a href="#" class="menu-links">Things to Do</a></h2>
+        <h2><a href="#" class="menu-links">Experiences</a></h2>
+        <div class="search-bar">
+          <input class="search-panel" type="text" placeholder="Search" /><i
+            class="fa-solid fa-magnifying-glass"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero section -->
+    <div class="hero">
+      <img src="assets/hero.jpg" alt="" class="heroimage" />
+      <div class="hero-container">
+        <h3>Namaste! From the land of</h3>
+        <h1 class="hero-text">The Great Himalayas</h1>
+        <p class="hero-subtext">
+          <i
+            >"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+            maiores commodi aut animi. Voluptates, libero numquam. Distinctio
+            totam reiciendis perferendis in tenetur atque labore ut recusandae
+            quos numquam explicabo dolores fuga, natus nesciunt. Optio,
+            officiis!"</i
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- content section -->
+    <main>
+      <div class="container">
+        <div class="left-container">
+          <h1>Nepal</h1>
+          <p class="dark">
+            A trekker's paradise, Nepal combines Himalayan views, golden
+            temples, charming hill villages and jungle wildlife watching to
+            offer one of the wor's great travel destinations.
+          </p>
+          <p class="dark">
+            Coming to Nepal is coming to an experience that is only yours. From
+            the remotest corners to the urban landscape, Nepal embodies a
+            sensory experience of colours, sounds, sights and tastes. Visit
+            Nepal for life's amazing moments.
+          </p>
+          <div class="buttons">
+            <button>
+              Read More...<i class="blue fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="right-container">
+          <img src="/assets/pictures.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="experiences">
+        <h4>01 / EXPERIENCES</h4>
+        <div class="exp-container">
+          <div class="text-area">
+            <h2>Dancing With Gods</h2>
+            <p class="dark">
+              The Lakhey dance is an important aspect of Nepali culture, and is
+              performed during the Indra Jatra festival which falls in the month
+              of September. Lakhey's are deities from the newari culture. It is
+              said that blah blak in Nepal. Syabhale is really tasty. I like
+              momo that's what people said about lakhey.
+            </p>
+            <span><a href="#">See more...</a></span>
+          </div>
+          <img src="/assets/lakhey.jpg" alt="" />
+        </div>
+      </div>
+      <!-- Swiper section -->
+      <div class="carousel-slides">
+        <h4>02 / ADVENTURES</h4>
+        <!-- <h2>Himalayan Adventures</h2>
+        <span><a href="#"> Explore more...</a></span> -->
+
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/carousel/everest.jpeg" alt="" />
+                <h3>Ascend The Everest</h3>
+                <p class="dark">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus corrupti id voluptates architecto error vero.
+                </p>
+                <span><a href="#">See more...</a></span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/drop.jpeg" alt="" />
+                <h3>Stroll With Rhinoes</h3>
+                <p class="dark">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus corrupti id voluptates architecto error vero.
+                </p>
+                <span><a href="#">See more...</a></span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/dancewithdeities.jpg" alt="" />
+                <h3>Dance with Deities</h3>
+                <p class="dark">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus corrupti id voluptates architecto error vero.
+                </p>
+                <span><a href="#">See more...</a></span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/shinewithsun.jpg" alt="" />
+                <h3>Shine with the Sun</h3>
+                <p class="dark">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus corrupti id voluptates architecto error vero.
+                </p>
+                <span><a href="#">See more...</a></span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/bungee.jpg" alt="" />
+                <h3>Destroy your fears</h3>
+                <p class="dark">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus corrupti id voluptates architecto error vero.
+                </p>
+                <span><a href="#">See more...</a></span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/pickyourowntea.jpg" alt="" />
+                <h3>Pick your own tea</h3>
+                <p class="dark">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus corrupti id voluptates architecto error vero.
+                </p>
+                <span><a href="#">See more...</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- gallery section -->
+      <div class="gallery">
+        <h4>03 / GALLERY</h4>
+        <h2>Experience Life....</h2>
+
+        <div class="gallery-container">
+          <div class="imagecontainer">
+            <div class="gallery-card top-left">
+              <img
+                src="/assets/Gallery/annapurna.jpg"
+                alt=""
+                class="gallery-image top-left"
+              />
+            </div>
+            <div class="gallery-card">
+              <img
+                src="/assets/Gallery/lakhey.jpg"
+                alt=""
+                class="gallery-image"
+              />
+            </div>
+            <div class="gallery-card">
+              <img
+                src="/assets/pashupatinath.jpg"
+                alt=""
+                class="gallery-image"
+              />
+            </div>
+            <div class="gallery-card">
+              <img src="/assets/pokhara.jpg" alt="" class="gallery-image" />
+            </div>
+            <div class="gallery-card">
+              <img
+                src="/assets/Gallery/dharahara.jpg"
+                alt=""
+                class="gallery-image"
+              />
+            </div>
+          </div>
+          <div class="imagecontainer">
+            <div class="gallery-card">
+              <img
+                src="/assets/Gallery/ping.jpeg"
+                alt=""
+                class="gallery-image top-right"
+              />
+            </div>
+            <div class="gallery-card">
+              <img src="/assets/kumari.jpg" alt="" class="gallery-image" />
+            </div>
+            <div class="gallery-card">
+              <img
+                src="/assets/Gallery/swoyambhu.jpg"
+                alt=""
+                class="gallery-image"
+              />
+            </div>
+            <div class="gallery-card">
+              <img
+                src="/assets/sherpa dress.jpg"
+                alt=""
+                class="gallery-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- video container -->
+      <div class="video">
+        <h4>04 / VISUALS</h4>
+        <h2>Visualize Nepal..</h2>
+        <div class="video-container">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/j61j9X4xCnA?si=x1mw4XjrNKZUmsT-"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- About Nepal section -->
+      <div class="about">
+        <h4>05 / ABOUT NEPAL</h4>
+        <h2>Whats in Nepal?</h2>
+        <p class="dark">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          laboriosam quis modi, officia maiores soluta adipisci doloremque nobis
+          sunt? Sint architecto perspiciatis impedit necessitatibus accusantium
+          iste earum facere quas ea consequuntur nulla fugiat officiis debitis
+          illum sit quaerat laborum, ullam velit minus soluta dicta alias quod
+          illo. Ipsa est soluta voluptas rem laboriosam aliquid veniam dolore
+          fugiat eveniet! Repellat, laudantium sint aut dolores fuga sit
+          pariatur nobis laboriosam illum autem iure similique nulla illo omnis
+          hic debitis sunt asperiores rem. Eius ipsam, at, odio adipisci quos
+          quaerat iure tenetur, rem recusandae alias commodi? Delectus libero
+          atque consectetur magnam! Aut odit repudiandae omnis, maiores minus
+          nam?
+        </p>
+        <p class="dark">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          laboriosam quis modi, officia maiores soluta adipisci doloremque nobis
+          sunt? Sint architecto perspiciatis impedit necessitatibus accusantium
+          iste earum facere quas ea consequuntur nulla fugiat officiis debitis
+          illum sit quaerat laborum, ullam velit minus soluta dicta alias quod
+          illo. Ipsa est soluta voluptas rem laboriosam aliquid veniam dolore
+          fugiat eveniet! Repellat, laudantium sint aut dolores fuga sit
+          pariatur nobis laboriosam illum autem iure similique nulla illo omnis
+          hic debitis sunt asperiores rem. Eius ipsam, at, odio adipisci quos
+          quaerat iure tenetur, rem recusandae alias commodi? Delectus libero
+          atque consectetur magnam! Aut odit repudiandae omnis, maiores minus
+          nam?
+        </p>
+      </div>
+
+      <div class="marquee-container">
+        <div class="marquee">VISIT NEPAL - EXPERIENCE THE THRILL OF LIFE</div>
+      </div>
+    </main>
+
+    <!-- Footer Section  -->
+    <footer>
+      <div class="footer-container ">
+        <div class="footer-element left">
+          <h3>Travel Nepal</h3>
+
+        </div>
+        <div class="footer-element right">
+          <h3>Our Services</h3>
+          <ul>
+            <li>Flight Booking</li>
+            <li>Travel Planning</li>
+            <li>Top class accomodation</li>
+            <li>Terms & conditions</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js/app.js"></script>
+    <script src="/app.js/dark.js"></script>
+  </body>
+</html>
