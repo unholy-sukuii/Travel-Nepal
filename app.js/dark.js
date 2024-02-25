@@ -1,27 +1,46 @@
 let main = document.querySelectorAll("main");
 let main2 = document.querySelector("main");
-let divs = main[0].children;
-// console.log(divs)
-let zero = document.querySelector(".container")
-let one = document.querySelector('.experiences')
-let two = document.querySelector('.carousel-slides')
-let three = document.querySelector('.gallery')
-let four = document.querySelector('.video')
-let five = document.querySelector('.about')
-let six = document.querySelector('.marquee-container')
-
-
-
+let divs = main[0].children
+// console.log();
+let footer = document.querySelector('footer')
+let body = document.querySelector('body')
 let change = document.querySelector(".toggler");
 let mode = document.querySelector("#mode");
-
-
 let text = document.querySelectorAll(".dark")
-function colorchange(clr){
-    for(let i = 0; i<=text.length; i++){
-        console.log(text[i])
-        text[i].style.color = `${clr}`
-    }
+let slides = document.querySelector('.carousel-slides')
+let card = document.querySelectorAll(".swiper-card")
+// 040D12
+
+let count = true;
+
+let arr = []
+for(el in divs){
+  arr.push(divs[el]);
+  
+}
+
+arr = arr.slice(0,7)
+console.log(arr)
+
+
+let sliderChange = (color) =>{
+  card.forEach(element =>{
+    element.style.backgroundColor = color;
+  })
+}
+
+
+
+let colorChange = (color) => {
+text.forEach(element => {
+  element.style.color = color;
+});
+}
+
+let darkMode = (color) =>{
+  arr.forEach(element =>{
+    element.style.backgroundColor = color;
+  })
 }
 
 
@@ -35,9 +54,6 @@ function colorchange(clr){
 
 
 
-let count = true;
-
-
 
 
 
@@ -47,14 +63,12 @@ change.addEventListener("click", () => {
     change.classList.replace("fa-solid", "fa-regular");
     mode.innerText = "LITE";
     main2.style.backgroundColor = "#040D12";
-    zero.style.backgroundColor = "#0c1920"
-    one.style.backgroundColor = "#0c1920";
-    two.style.backgroundColor = "#0c1920";
-    three.style.backgroundColor = "#0c1920";
-    four.style.backgroundColor = "#0c1920";
-    five.style.backgroundColor = "#0c1920";
-    six.style.backgroundColor = "#0c1920";
-   
+    darkMode("#040D12")
+    footer.style.backgroundColor = "#040D12";
+    body.style.backgroundColor = "#040D12"
+    colorChange("whitesmoke")
+    sliderChange("#040D12")
+    slides.style.backgroundColor = "#040D12"
 
     
 
@@ -65,14 +79,12 @@ change.addEventListener("click", () => {
     mode.innerText = "DARK";
     
     main2.style.backgroundColor = "whitesmoke"
-    zero.style.backgroundColor = "#eef0f1"
-    one.style.backgroundColor = "#eef0f1";
-    two.style.backgroundColor = "#eef0f1";
-    three.style.backgroundColor = "#eef0f1";
-    four.style.backgroundColor = "#eef0f1";
-    five.style.backgroundColor = "#eef0f1";
-    six.style.backgroundColor = "#0b1a66";
+    darkMode("#eef0f1")
+    body.style.backgroundColor = "#eef0f1"
+    colorChange("#2c3740")
+    sliderChange("#eef0f1")
     count = true;
+
   }
 });
 
